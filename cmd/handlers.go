@@ -1,7 +1,12 @@
 package main
 
-import "net/http"
+import (
+	"context"
+	"net/http"
+
+	"github.com/luism2302/world-cup-pool/components"
+)
 
 func (app application) home(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("Home page stuff"))
+	components.Base().Render(context.Background(), w)
 }

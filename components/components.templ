@@ -1,2 +1,29 @@
 package components
 
+templ Base() {
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>World Cup Pool</title>  
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <link href="/static/css/output.css" rel="stylesheet"/>
+        </head>
+        <body class="bg-blue-800 font-sans">
+            @NavBar()
+        </body>
+    </html>
+}
+
+templ NavBar() {
+    <header class="bg-red-500">
+        <nav class="flex justify-between">
+            <div>
+                <ul>
+                    <li>Home</li>   
+                    <li>Pools</li>   
+                </ul> 
+            </div>
+        </nav>
+    </header>
+}
